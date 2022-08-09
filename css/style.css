@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  color:rgb(69, 174, 171) ;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+.menu {
+  width: 100%;
+  background-color: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  display: inline-block;
+}
+.menu li a {
+  padding: 10px 20px;
+  display: inline-block;
+  color: black 249, 221, 177;
+}
+.menu li a:hover {
+  background-color: rgb(242, 177, 208);
+  color: rgb(14, 14, 15);
+}
+
+h2 {
+  color: blue;
+  font-family: "Roboto Mono", monospace;
+}
+
+h3 {
+  color: rgb(9, 113, 105);
+}
+
+h5 {
+  color: blue;
+  font-family: "roboto mono";
+}
+
+p {
+  color: rgb(14, 15, 15);
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: 1fr 2fr 1, 5fr 1fr;
+  grid-template-columns: 1fr 0, 5fr 0, 5fr 1fr;
+  grid-template-areas: "header header header header" "main main main main" "article article article article" "img img img img" "footer footer footer footer";
+}
+
+ul {
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+  background-color: none;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+  background-color: rgb(230, 193, 148);
+  margin: 5px 10px 10px 10px;
+}
+
+article {
+  grid-area: article;
+  background-color: aliceblue;
+}
+
+img {
+  grid-area: margin;
+
+ 
+}
+
+footer{
+  background: #585454;
+  padding: 50px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+  text-align: center;  
+}
+
+.content-foo h4{
+  color: #fff;
+  border-bottom: 3px solid #af20d3;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo p{
+  color: rgb(17, 15, 15);
+}
+
+.titulo-final{
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 0 0 0;
+  color: #e8e8e8;
+}
+/*
+footer {
+  grid-area: footer;
+  background-color: rgb(255, 149, 166);
+  margin: 5px 10px 10px 10px;
+}/*# sourceMappingURL=style.css.map */

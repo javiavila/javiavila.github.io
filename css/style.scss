@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import "colores";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  color:rgb(69, 174, 171) ;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+
+.menu {
+    width: 100%;
+    background-color: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+        li {
+            display: inline-block; 
+            a {
+                padding: 10px 20px;
+                display: inline-block;
+                color: black 249, 221, 177;
+                    &:hover{
+                    background-color: rgb(242, 177, 208);
+                    color: rgb(14, 14, 15);
+                    }
+            }
+        }
+}
+
+h2 {
+  color: $colorPrimario;
+  font-family: "Roboto Mono", monospace;
+}
+
+h3 {
+  color: rgb(9, 113, 105);
+}
+
+h5 {
+  color: $colorPrimario;
+  font-family: "roboto mono";
+}
+
+p {
+  color: rgb(14, 15, 15);
+  font-family: "Roboto Mono", monospace;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: 1fr 2fr 1, 5fr 1fr;
+  grid-template-columns: 1fr 0, 5fr 0, 5fr 1fr;
+  grid-template-areas: "header header header header" "main main main main" "article article article article" "img img img img" "footer footer footer footer";
+}
+
+ul {
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+  background-color: #4dccd0;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+  background-color: rgb(230, 193, 148);
+  margin: 5px 10px 10px 10px;
+}
+
+article {
+  grid-area: article;
+  background-color: aliceblue;
+}
+
+img {
+  grid-area: margin;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(255, 149, 166);
+  margin: 5px 10px 10px 10px;
+}
+
+
+
